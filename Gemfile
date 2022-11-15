@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # device　という認証のためのgemを追加します
 gem 'devise'
+
+# kaminari　というgemを追加。（ページネーションのため）
+gem 'kaminari','~> 1.2.1'
