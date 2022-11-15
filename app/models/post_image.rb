@@ -3,6 +3,7 @@ class PostImage < ApplicationRecord
   # PostImageモデルに画像を持たせるための記述
   has_one_attached :image
   belongs_to :user
+  has_many :post_comments, dependent: :destroy
   
   def get_image
     unless image.attached?
